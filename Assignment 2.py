@@ -12,7 +12,6 @@ while i < len(my_list):
 
 ####################
 print("Задание 2")
-#не совсем поняла что требуется в задании
 (my_list.append(input("Enter any value:")))
 i = 0
 print("reversed:")
@@ -42,4 +41,19 @@ print (n[i])
 ####################
 print("Задание 4")
 
-words = input("Enter any word: ")
+words = input("Enter any word(s): ")
+wrd = words.split( )
+
+for count, word in enumerate(wrd, 1):
+    print(count, word[:9])
+
+####################
+print("Задание 5")
+my_list = [7, 5, 3, 3, 2]
+mm = int(input("enter the integer:"))
+
+for i in range(len(my_list)):
+    if mm > my_list[i]:
+        my_list.insert(i, mm)
+        break
+print(my_list)
